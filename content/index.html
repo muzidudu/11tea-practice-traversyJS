@@ -1,0 +1,73 @@
+---
+layout: base
+title: Home
+description: Homepage of 11tea
+styles: [tailwind.css]
+scripts: [alpine.js, traversyJS/test.js]
+
+---
+
+<p class="text-xl font-bold text-green-800">Content</p>
+
+<h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
+
+
+<div x-data="{ count: 0 }">
+    <button x-on:click="count++">Increment</button>
+
+    <span x-text="count"></span>
+</div>
+<div class="min-w-0 col-span-2 row-start-2">
+    <div class="mt-4 focus:outline-none" id="headlessui-tabs-panel-39" role="tabpanel" tabindex="0"
+        data-headlessui-state="selected" aria-labelledby="headlessui-tabs-tab-37">
+        <div id="frame-f8a14da22f26a67757b19f2fe3ca00ed" class="relative" style="height: auto;">
+            <style>
+                #frame-f8a14da22f26a67757b19f2fe3ca00ed {
+                    height: 360px;
+                }
+
+                @media (min-width: 704px) {
+                    #frame-f8a14da22f26a67757b19f2fe3ca00ed {
+                        height: 360px;
+                    }
+                }
+            </style><iframe class="w-full overflow-hidden rounded-lg ring-1 ring-slate-900/10"
+                id="frame-f8a14da22f26a67757b19f2fe3ca00ed" title="Simple preview" aria-label="Simple preview"
+                name="frame-f8a14da22f26a67757b19f2fe3ca00ed" srcdoc="<!doctype html><meta charset=&quot;utf-8&quot;><meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;><link rel=&quot;stylesheet&quot; href=&quot;/v2-assets/components.css?hash=9733794ea5fc7329647fa14b6287ff7d&quot;><script src=&quot;/v2-assets/components.js?hash=c42e44f6c92eb7517e1a4e8bd13028a6&quot;></script><link rel=&quot;modulepreload&quot; href=&quot;https://tailwindui.com/build/assets/iframe-alpine-964dceff.js&quot; /><link rel=&quot;modulepreload&quot; href=&quot;https://tailwindui.com/build/assets/iframe-a81dc9a8.js&quot; /><link rel=&quot;modulepreload&quot; href=&quot;https://tailwindui.com/build/assets/_commonjsHelpers-87174ba5.js&quot; /><script type=&quot;module&quot; src=&quot;https://tailwindui.com/build/assets/iframe-alpine-964dceff.js&quot;></script><body><div class=&quot;&quot; style=&quot;&quot;>
+<div class=&quot;bg-gray-100 p-8&quot; style=&quot;min-height: 360px&quot;>
+<div class=&quot;mx-auto w-64 text-right&quot;>
+  
+<div x-data=&quot;Components.menu({ open: true })&quot; x-init=&quot;init()&quot; @keydown.escape.stop=&quot;open = false; focusButton()&quot; @click.away=&quot;onClickAway($event)&quot; class=&quot;relative inline-block text-left&quot;>
+<div>
+  <button type=&quot;button&quot; class=&quot;inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50&quot; id=&quot;menu-button&quot; x-ref=&quot;button&quot; @click=&quot;onButtonClick()&quot; @keyup.space.prevent=&quot;onButtonEnter()&quot; @keydown.enter.prevent=&quot;onButtonEnter()&quot; aria-expanded=&quot;true&quot; aria-haspopup=&quot;true&quot; x-bind:aria-expanded=&quot;open.toString()&quot; @keydown.arrow-up.prevent=&quot;onArrowUp()&quot; @keydown.arrow-down.prevent=&quot;onArrowDown()&quot;>
+    Options
+    <svg class=&quot;-mr-1 h-5 w-5 text-gray-400&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;currentColor&quot; aria-hidden=&quot;true&quot;>
+<path fill-rule=&quot;evenodd&quot; d=&quot;M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z&quot; clip-rule=&quot;evenodd&quot;></path>
+</svg>
+  </button>
+</div>
+
+
+  <div x-show=&quot;open&quot; x-transition:enter=&quot;transition ease-out duration-100&quot; x-transition:enter-start=&quot;transform opacity-0 scale-95&quot; x-transition:enter-end=&quot;transform opacity-100 scale-100&quot; x-transition:leave=&quot;transition ease-in duration-75&quot; x-transition:leave-start=&quot;transform opacity-100 scale-100&quot; x-transition:leave-end=&quot;transform opacity-0 scale-95&quot; class=&quot;absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none&quot; x-ref=&quot;menu-items&quot; x-description=&quot;Dropdown menu, show/hide based on menu state.&quot; x-bind:aria-activedescendant=&quot;activeDescendant&quot; role=&quot;menu&quot; aria-orientation=&quot;vertical&quot; aria-labelledby=&quot;menu-button&quot; tabindex=&quot;-1&quot; @keydown.arrow-up.prevent=&quot;onArrowUp()&quot; @keydown.arrow-down.prevent=&quot;onArrowDown()&quot; @keydown.tab=&quot;open = false&quot; @keydown.enter.prevent=&quot;open = false; focusButton()&quot; @keyup.space.prevent=&quot;open = false; focusButton()&quot;>
+    <div class=&quot;py-1&quot; role=&quot;none&quot;>
+      <a href=&quot;#&quot; class=&quot;text-gray-700 block px-4 py-2 text-sm&quot; x-state:on=&quot;Active&quot; x-state:off=&quot;Not Active&quot; :class=&quot;{ 'bg-gray-100 text-gray-900': activeIndex === 0, 'text-gray-700': !(activeIndex === 0) }&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot; id=&quot;menu-item-0&quot; @mouseenter=&quot;onMouseEnter($event)&quot; @mousemove=&quot;onMouseMove($event, 0)&quot; @mouseleave=&quot;onMouseLeave($event)&quot; @click=&quot;open = false; focusButton()&quot;>Account settings</a>
+      <a href=&quot;#&quot; class=&quot;text-gray-700 block px-4 py-2 text-sm&quot; :class=&quot;{ 'bg-gray-100 text-gray-900': activeIndex === 1, 'text-gray-700': !(activeIndex === 1) }&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot; id=&quot;menu-item-1&quot; @mouseenter=&quot;onMouseEnter($event)&quot; @mousemove=&quot;onMouseMove($event, 1)&quot; @mouseleave=&quot;onMouseLeave($event)&quot; @click=&quot;open = false; focusButton()&quot;>Support</a>
+      <a href=&quot;#&quot; class=&quot;text-gray-700 block px-4 py-2 text-sm&quot; :class=&quot;{ 'bg-gray-100 text-gray-900': activeIndex === 2, 'text-gray-700': !(activeIndex === 2) }&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot; id=&quot;menu-item-2&quot; @mouseenter=&quot;onMouseEnter($event)&quot; @mousemove=&quot;onMouseMove($event, 2)&quot; @mouseleave=&quot;onMouseLeave($event)&quot; @click=&quot;open = false; focusButton()&quot;>License</a>
+      <form method=&quot;POST&quot; action=&quot;#&quot; role=&quot;none&quot;>
+        <button type=&quot;submit&quot; class=&quot;text-gray-700 block w-full px-4 py-2 text-left text-sm&quot; :class=&quot;{ 'bg-gray-100 text-gray-900': activeIndex === 3, 'text-gray-700': !(activeIndex === 3) }&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot; id=&quot;menu-item-3&quot; @mouseenter=&quot;onMouseEnter($event)&quot; @mousemove=&quot;onMouseMove($event, 3)&quot; @mouseleave=&quot;onMouseLeave($event)&quot; @click=&quot;open = false; focusButton()&quot;>Sign out</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+</div>
+</div>
+</div></body>" style="height: 360px;"></iframe>
+            <div class="absolute inset-y-0 items-center hidden px-2 left-full cursor-ew-resize sm:flex">
+                <div class="h-8 w-1.5 rounded-full bg-slate-400"></div>
+            </div>
+        </div>
+    </div><span id="headlessui-tabs-panel-40" role="tabpanel" tabindex="-1" aria-labelledby="headlessui-tabs-tab-38"
+        style="position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"></span>
+</div>
