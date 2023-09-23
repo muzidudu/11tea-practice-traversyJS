@@ -1,4 +1,4 @@
-# 11tea
+# 11tea TraversyJS Practice
 
 ## Built with 
 
