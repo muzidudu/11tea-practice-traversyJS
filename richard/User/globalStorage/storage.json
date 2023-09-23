@@ -612,13 +612,6 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
-                                    "id": "workbench.action.splitEditorInGroup",
-                                    "label": "Split in &&Group"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
-                                {
                                     "id": "workbench.action.editorLayoutSingle",
                                     "label": "&&Single"
                                 },
@@ -707,7 +700,8 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Word Wrap"
+                        "label": "&&Word Wrap",
+                        "enabled": false
                     }
                 ]
             },
@@ -715,8 +709,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back",
-                        "enabled": false
+                        "label": "&&Back"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -1622,5 +1615,19 @@
             "statusBarHeight": 22,
             "windowBorder": false
         }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/richard/projects/11tea-practice-traversyJS",
+            "backupPath": "/home/richard/projects/11tea-practice-traversyJS/richard/Backups/d335da632d5ce2b7ee00da6155b41a7d",
+            "uiState": {
+                "mode": 0,
+                "x": 448,
+                "y": 185,
+                "width": 1024,
+                "height": 768
+            }
+        },
+        "openedWindows": []
     }
 }
