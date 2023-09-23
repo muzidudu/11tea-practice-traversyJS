@@ -1,0 +1,14 @@
+2023-09-24 00:16:38.475 [info] Extension host with pid 55118 started
+2023-09-24 00:16:38.475 [info] Skipping acquiring lock for /home/richard/projects/11tea-practice-traversyJS/richard/User/workspaceStorage/f0a37a0ed7e405d10142899695e9b325.
+2023-09-24 00:16:38.625 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2023-09-24 00:16:38.738 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2023-09-24 00:16:38.768 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2023-09-24 00:16:38.800 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-09-24 00:16:38.838 [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+2023-09-24 00:16:38.933 [info] Eager extensions activated
+2023-09-24 00:16:38.946 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-09-24 00:16:38.948 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-09-24 00:16:42.975 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2023-09-24 00:16:43.932 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-09-24 00:16:43.990 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-09-24 00:16:44.037 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
